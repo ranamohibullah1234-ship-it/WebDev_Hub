@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Course | WebDev Hub</title>
+    <link rel="stylesheet" href="javascript-course.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="#home" class="logo">WebDev <span>Hub.</span></a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#lessons">Lessons</a>
+            <a href="#practice">Practice</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <span class="tag">BEGINNER COURSE</span>
+
+        <h1>Learn <span>JavaScript</span></h1>
+
+        <p>
+            Learn the basics of JavaScript with easy definitions
+            and simple code examples.
+        </p>
+
+        <a href="#lessons" class="btn">Start Learning →</a>
+
+        <div class="code-preview">
+            <p>let name = "Ali";</p>
+            <p>console.log("Hello " + name);</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container" id="lessons">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>JavaScript Topics</h3>
+            <a href="#intro">1. Introduction</a>
+            <a href="#variables">2. Variables</a>
+            <a href="#datatypes">3. Data Types</a>
+            <a href="#input">4. Input & Output</a>
+            <a href="#operators">5. Operators</a>
+            <a href="#conditions">6. If-Else</a>
+            <a href="#loops">7. Loops</a>
+            <a href="#arrays">8. Arrays</a>
+            <a href="#objects">9. Objects</a>
+            <a href="#functions">10. Functions</a>
+            <a href="#oops">11. Basic OOP</a>
+            <a href="#practice">12. Practice</a>
+        </aside>
+
+        <!-- Lessons -->
+        <section class="lessons">
+
+            <!-- 1. Introduction -->
+            <article class="lesson" id="intro">
+                <span class="number">LESSON 01</span>
+                <h2>What is JavaScript?</h2>
+
+                <p>
+                    JavaScript is a programming language used to make
+                    websites interactive.
+                </p>
+
+                <h3>First Program</h3>
+                <pre><code>console.log("Hello, World!");</code></pre>
+
+                <p><strong>Output:</strong></p>
+                <pre><code>Hello, World!</code></pre>
+            </article>
+
+            <!-- 2. Variables -->
+            <article class="lesson" id="variables">
+                <span class="number">LESSON 02</span>
+                <h2>Variables</h2>
+
+                <p>
+                    Variables store information that we can use in a program.
+                </p>
+
+                <pre><code>let age = 15;
+const name = "Ali";
+var city = "Lahore";
+
+console.log(name);
+console.log(age);</code></pre>
+
+                <ul>
+                    <li><strong>let:</strong> A variable whose value can be reassigned.</li>
+                    <li><strong>const:</strong> A variable that cannot be reassigned.</li>
+                    <li><strong>var:</strong> An older way to declare variables.</li>
+                </ul>
+            </article>
+
+            <!-- 3. Data Types -->
+            <article class="lesson" id="datatypes">
+                <span class="number">LESSON 03</span>
+                <h2>Data Types</h2>
+
+                <p>Data types describe the values used in JavaScript.</p>
+
+                <pre><code>let name = "Ali";       // String
+let age = 15;           // Number
+let isStudent = true;   // Boolean
+let result;             // Undefined
+let value = null;       // Null</code></pre>
+
+                <ul>
+                    <li><strong>String:</strong> Text</li>
+                    <li><strong>Number:</strong> Numbers, including decimals</li>
+                    <li><strong>Boolean:</strong> true or false</li>
+                    <li><strong>Undefined:</strong> A variable without an assigned value</li>
+                    <li><strong>Null:</strong> An intentionally empty value</li>
+                </ul>
+            </article>
+
+            <!-- 4. Input and Output -->
+            <article class="lesson" id="input">
+                <span class="number">LESSON 04</span>
+                <h2>Input & Output</h2>
+
+                <p>
+                    <code>console.log()</code> displays information in the
+                    browser console. <code>prompt()</code> asks the user
+                    for input in a browser.
+                </p>
+
+                <pre><code>let name = prompt("Enter your name");
+
+console.log("Hello " + name);</code></pre>
+
+                <p><strong>Another example:</strong></p>
+
+                <pre><code>alert("Welcome to JavaScript!");</code></pre>
+
+                <p>
+                    <code>alert()</code> displays a message box.
+                    The browser console is available through Developer Tools.
+                </p>
+            </article>
+
+            <!-- 5. Operators -->
+            <article class="lesson" id="operators">
+                <span class="number">LESSON 05</span>
+                <h2>Operators</h2>
+
+                <p>Operators perform calculations and comparisons.</p>
+
+                <pre><code>let a = 10;
+let b = 3;
+
+console.log(a + b);  // 13
+console.log(a - b);  // 7
+console.log(a * b);  // 30
+console.log(a / b);  // Division
+console.log(a % b);  // Remainder
+
+console.log(a > b);  // true
+console.log(a === b); // false</code></pre>
+
+                <p>Main types: arithmetic, comparison and logical operators.</p>
+            </article>
+
+            <!-- 6. Conditions -->
+            <article class="lesson" id="conditions">
+                <span class="number">LESSON 06</span>
+                <h2>If-Else Conditions</h2>
+
+                <p>
+                    Conditions allow a program to make decisions.
+                </p>
+
+                <pre><code>let age = 18;
+
+if (age >= 18) {
+    console.log("Adult");
+} else {
+    console.log("Under 18");
+}</code></pre>
+
+                <p>
+                    Use <code>else if</code> when you need to check
+                    another condition.
+                </p>
+            </article>
+
+            <!-- 7. Loops -->
+            <article class="lesson" id="loops">
+                <span class="number">LESSON 07</span>
+                <h2>For & While Loops</h2>
+
+                <p>
+                    Loops repeat a block of code multiple times.
+                </p>
+
+                <h3>For Loop</h3>
+                <pre><code>for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}</code></pre>
+
+                <h3>While Loop</h3>
+                <pre><code>let i = 1;
+
+while (i <= 3) {
+    console.log(i);
+    i++;
+}</code></pre>
+            </article>
+
+            <!-- 8. Arrays -->
+            <article class="lesson" id="arrays">
+                <span class="number">LESSON 08</span>
+                <h2>Arrays</h2>
+
+                <p>
+                    An array stores multiple values in a single variable.
+                </p>
+
+                <pre><code>let fruits = ["Apple", "Mango", "Banana"];
+
+console.log(fruits[0]);
+
+fruits.push("Orange");
+
+console.log(fruits.length);</code></pre>
+
+                <ul>
+                    <li>Array indexing starts from 0.</li>
+                    <li><code>push()</code> adds an item to the end.</li>
+                    <li><code>length</code> gives the number of items.</li>
+                </ul>
+            </article>
+
+            <!-- 9. Objects -->
+            <article class="lesson" id="objects">
+                <span class="number">LESSON 09</span>
+                <h2>Objects</h2>
+
+                <p>
+                    An object stores related information as key-value pairs.
+                </p>
+
+                <pre><code>let student = {
+    name: "Ali",
+    age: 15,
+    city: "Lahore"
+};
+
+console.log(student.name);
+console.log(student.age);</code></pre>
+            </article>
+
+            <!-- 10. Functions -->
+            <article class="lesson" id="functions">
+                <span class="number">LESSON 10</span>
+                <h2>Functions</h2>
+
+                <p>
+                    A function is a reusable block of code that performs a task.
+                </p>
+
+                <pre><code>function greet(name) {
+    console.log("Hello " + name);
+}
+
+greet("Ali");
+greet("Sara");</code></pre>
+
+                <h3>Function with Return</h3>
+
+                <pre><code>function add(a, b) {
+    return a + b;
+}
+
+let result = add(5, 3);
+console.log(result);</code></pre>
+            </article>
+
+            <!-- 11. OOP -->
+            <article class="lesson" id="oops">
+                <span class="number">LESSON 11</span>
+                <h2>Basic OOP</h2>
+
+                <p>
+                    OOP stands for Object-Oriented Programming.
+                    It organizes code using classes and objects.
+                </p>
+
+                <h3>Class & Object</h3>
+
+                <pre><code>class Student {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    greet() {
+        console.log("Hello " + this.name);
+    }
+}
+
+const student1 = new Student("Ali", 15);
+
+student1.greet();
+console.log(student1.age);</code></pre>
+
+                <ul>
+                    <li><strong>Class:</strong> A blueprint for creating objects.</li>
+                    <li><strong>Object:</strong> An instance created from a class.</li>
+                    <li><strong>constructor():</strong> Initializes a new object.</li>
+                    <li><strong>this:</strong> Refers to the current object in this example.</li>
+                </ul>
+
+                <h3>Inheritance</h3>
+
+                <p>
+                    Inheritance allows a class to extend another class.
+                </p>
+
+                <pre><code>class Animal {
+    speak() {
+        console.log("Animal sound");
+    }
+}
+
+class Dog extends Animal {
+    bark() {
+        console.log("Woof!");
+    }
+}
+
+const dog = new Dog();
+dog.speak();
+dog.bark();</code></pre>
+
+                <div class="note">
+                    Learn classes, objects, constructors and inheritance
+                    first. You can study advanced OOP concepts later.
+                </div>
+            </article>
+
+            <!-- 12. Practice -->
+            <article class="lesson practice" id="practice">
+                <span class="number">FINAL PRACTICE</span>
+                <h2>Mini Project: Simple Calculator</h2>
+
+                <p>Try making a calculator using variables and functions.</p>
+
+                <pre><code>function add(a, b) {
+    return a + b;
+}
+
+function subtract(a, b) {
+    return a - b;
+}
+
+console.log(add(10, 5));
+console.log(subtract(10, 5));</code></pre>
+
+                <h3>Your Tasks</h3>
+                <ul>
+                    <li>Create multiplication and division functions.</li>
+                    <li>Try different numbers.</li>
+                    <li>Display the results using console.log().</li>
+                </ul>
+
+                <a href="index.html" class="btn">Back to home </a>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#home" class="logo">WebDev <span>Hub.</span></a>
+        <p>Learn. Practice. Build.</p>
+        <p>© 2026 WebDev Hub</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Course | WebDev Hub</title>
+    <link rel="stylesheet" href="python-course.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="#" class="logo">WebDev <span>Hub.</span></a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#lessons">Lessons</a>
+            <a href="#oops">OOP</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <span class="tag">BEGINNER COURSE</span>
+        <h1>Learn <span>Python</span> Programming</h1>
+        <p>
+            Learn Python step by step with easy definitions,
+            simple code examples and the basics of OOP.
+        </p>
+        <a href="#lessons" class="btn">Start Learning →</a>
+
+        <div class="python-box">
+            <p><span class="purple">print</span>(<span class="green">"Hello, World!"</span>)</p>
+            <p><span class="purple">name</span> = <span class="green">"Mohib"</span></p>
+            <p><span class="purple">print</span>(name)</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container" id="lessons">
+
+        <aside class="sidebar">
+            <h3>Python Topics</h3>
+            <a href="#intro">1. Introduction</a>
+            <a href="#variables">2. Variables & Data Types</a>
+            <a href="#input">3. Input & Output</a>
+            <a href="#operators">4. Operators</a>
+            <a href="#conditions">5. If-Else</a>
+            <a href="#loops">6. Loops</a>
+            <a href="#collections">7. Lists & Dictionaries</a>
+            <a href="#functions">8. Functions</a>
+            <a href="#oops">9. OOP</a>
+            <a href="#project">10. Practice Project</a>
+        </aside>
+
+        <section class="lessons">
+
+            <!-- 1. Introduction -->
+            <article class="lesson" id="intro">
+                <span class="number">LESSON 01</span>
+                <h2>What is Python?</h2>
+                <p>
+                    Python is a popular programming language used for
+                    websites, automation, data analysis and artificial intelligence.
+                </p>
+
+                <h3>First Python Program</h3>
+                <pre><code>print("Hello, World!")</code></pre>
+
+                <p><strong>Output:</strong></p>
+                <pre><code>Hello, World!</code></pre>
+            </article>
+
+            <!-- 2. Variables -->
+            <article class="lesson" id="variables">
+                <span class="number">LESSON 02</span>
+                <h2>Variables & Data Types</h2>
+                <p>
+                    A variable stores a value that your program can use.
+                    Python automatically determines its data type.
+                </p>
+
+                <pre><code>name = "Ali"       # String
+age = 15           # Integer
+height = 5.5       # Float
+is_student = True  # Boolean
+
+print(name)
+print(age)</code></pre>
+
+                <h3>Main Data Types</h3>
+                <ul>
+                    <li><strong>String (str):</strong> Text, e.g. "Hello"</li>
+                    <li><strong>Integer (int):</strong> Whole numbers, e.g. 10</li>
+                    <li><strong>Float:</strong> Decimal numbers, e.g. 5.5</li>
+                    <li><strong>Boolean (bool):</strong> True or False</li>
+                </ul>
+            </article>
+
+            <!-- 3. Input and Output -->
+            <article class="lesson" id="input">
+                <span class="number">LESSON 03</span>
+                <h2>Input & Output</h2>
+                <p>
+                    Use <code>print()</code> to display information and
+                    <code>input()</code> to receive text from the user.
+                </p>
+
+                <pre><code>name = input("Enter your name: ")
+print("Welcome", name)</code></pre>
+
+                <p><strong>Example output:</strong></p>
+                <pre><code>Enter your name: Ali
+Welcome Ali</code></pre>
+
+                <div class="note">
+                    Remember: <code>input()</code> returns text.
+                    Use <code>int()</code> when you need a whole number.
+                </div>
+            </article>
+
+            <!-- 4. Operators -->
+            <article class="lesson" id="operators">
+                <span class="number">LESSON 04</span>
+                <h2>Python Operators</h2>
+                <p>Operators perform calculations and comparisons.</p>
+
+                <pre><code>a = 10
+b = 3
+
+print(a + b)   # 13
+print(a - b)   # 7
+print(a * b)   # 30
+print(a / b)   # Division
+print(a % b)   # Remainder
+print(a > b)   # True</code></pre>
+
+                <p>Main groups: arithmetic, comparison and logical operators.</p>
+            </article>
+
+            <!-- 5. Conditions -->
+            <article class="lesson" id="conditions">
+                <span class="number">LESSON 05</span>
+                <h2>If-Else Conditions</h2>
+                <p>
+                    Conditions let your program make decisions based on
+                    whether something is true or false.
+                </p>
+
+                <pre><code>age = 18
+
+if age >= 18:
+    print("Adult")
+else:
+    print("Under 18")</code></pre>
+
+                <p>Use <code>elif</code> when you need to check another condition.</p>
+            </article>
+
+            <!-- 6. Loops -->
+            <article class="lesson" id="loops">
+                <span class="number">LESSON 06</span>
+                <h2>For & While Loops</h2>
+                <p>Loops repeat code instead of making you write it again and again.</p>
+
+                <h3>For Loop</h3>
+                <pre><code>for i in range(1, 6):
+    print(i)</code></pre>
+
+                <h3>While Loop</h3>
+                <pre><code>count = 1
+
+while count <= 3:
+    print(count)
+    count += 1</code></pre>
+            </article>
+
+            <!-- 7. Collections -->
+            <article class="lesson" id="collections">
+                <span class="number">LESSON 07</span>
+                <h2>Lists, Tuples & Dictionaries</h2>
+
+                <h3>List</h3>
+                <p>A list stores multiple items and can be changed.</p>
+                <pre><code>fruits = ["Apple", "Mango", "Banana"]
+print(fruits[0])
+
+fruits.append("Orange")</code></pre>
+
+                <h3>Tuple</h3>
+                <p>A tuple stores multiple items and cannot be changed after creation.</p>
+                <pre><code>colors = ("Red", "Blue", "Green")
+print(colors[1])</code></pre>
+
+                <h3>Dictionary</h3>
+                <p>A dictionary stores data as key-value pairs.</p>
+                <pre><code>student = {
+    "name": "Ali",
+    "age": 15
+}
+
+print(student["name"])</code></pre>
+            </article>
+
+            <!-- 8. Functions -->
+            <article class="lesson" id="functions">
+                <span class="number">LESSON 08</span>
+                <h2>Python Functions</h2>
+                <p>
+                    A function is a reusable block of code that performs
+                    a particular task.
+                </p>
+
+                <pre><code>def greet(name):
+    print("Hello", name)
+
+greet("Ali")
+greet("Sara")</code></pre>
+
+                <h3>Function with Return</h3>
+                <pre><code>def add(a, b):
+    return a + b
+
+result = add(5, 3)
+print(result)</code></pre>
+            </article>
+
+            <!-- 9. OOP -->
+            <article class="lesson" id="oops">
+                <span class="number">LESSON 09</span>
+                <h2>OOP (Object-Oriented Programming)</h2>
+                <p>
+                    OOP is a way of organizing code using classes and objects.
+                    It helps group related data and functions together.
+                </p>
+
+                <h3>1. Class & Object</h3>
+                <p>
+                    A <strong>class</strong> is a blueprint. An
+                    <strong>object</strong> is an instance created from that class.
+                </p>
+
+                <pre><code>class Student:
+    def greet(self):
+        print("Hello, student!")
+
+student1 = Student()
+student1.greet()</code></pre>
+
+                <h3>2. The __init__() Method</h3>
+                <p>
+                    <code>__init__()</code> initializes an object's data
+                    when the object is created.
+                </p>
+
+                <pre><code>class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+student1 = Student("Ali", 15)
+
+print(student1.name)
+print(student1.age)</code></pre>
+
+                <h3>3. Inheritance</h3>
+                <p>
+                    Inheritance lets one class reuse or extend features
+                    from another class.
+                </p>
+
+                <pre><code>class Animal:
+    def speak(self):
+        print("Animal makes a sound")
+
+class Dog(Animal):
+    def bark(self):
+        print("Woof!")
+
+dog = Dog()
+dog.speak()
+dog.bark()</code></pre>
+
+                <h3>4. The Four Main OOP Concepts</h3>
+                <ul>
+                    <li><strong>Encapsulation:</strong> Keeping data and related methods together and controlling access to data.</li>
+                    <li><strong>Inheritance:</strong> Reusing or extending another class.</li>
+                    <li><strong>Polymorphism:</strong> Different objects can respond to the same method in different ways.</li>
+                    <li><strong>Abstraction:</strong> Hiding implementation details and exposing the essential features.</li>
+                </ul>
+
+                <div class="note">
+                    <strong>OOP tip:</strong> First understand classes, objects
+                    and <code>__init__()</code>. Then move on to the four concepts.
+                </div>
+            </article>
+
+            <!-- 10. Practice -->
+            <article class="lesson practice" id="project">
+                <span class="number">FINAL PRACTICE</span>
+                <h2>Mini Project: Student Information</h2>
+                <p>Use a class to store a student's name and age.</p>
+
+                <pre><code>class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def show_info(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+
+student1 = Student("Ali", 15)
+student1.show_info()</code></pre>
+
+                <h3>Your Tasks</h3>
+                <ul>
+                    <li>Create another student object.</li>
+                    <li>Add a method to display the student's grade.</li>
+                    <li>Try using a different name and age.</li>
+                </ul>
+
+                <a href="index.html" class="btn">Back to home</a>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#home" class="logo">WebDev <span>Hub.</span></a>
+        <p>Learn. Practice. Build.</p>
+        <p>© 2026 WebDev Hub</p>
+    </footer>
+
+</body>
+</html>

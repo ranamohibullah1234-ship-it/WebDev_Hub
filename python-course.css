@@ -1,0 +1,396 @@
+
+/* ===== BASIC STYLING ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+    color: #25283b;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 18px 8%;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #635bff;
+}
+
+.navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.navbar nav a {
+    font-size: 14px;
+    color: #555b70;
+    font-weight: bold;
+}
+
+.navbar nav a:hover {
+    color: #635bff;
+}
+
+/* ===== HERO ===== */
+.hero {
+    text-align: center;
+    padding: 65px 8%;
+    background: white;
+}
+
+.tag {
+    display: inline-block;
+    background: #eeedff;
+    color: #635bff;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(30px, 5vw, 46px);
+    line-height: 1.25;
+    margin: 18px 0;
+}
+
+.hero h1 span {
+    color: #635bff;
+}
+
+.hero > p {
+    max-width: 600px;
+    margin: 0 auto 24px;
+    color: #697086;
+}
+
+.btn {
+    display: inline-block;
+    padding: 11px 20px;
+    background: #635bff;
+    color: white;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #4940e8;
+}
+
+/* ===== PYTHON CODE BOX ===== */
+.python-box {
+    max-width: 550px;
+    margin: 35px auto 0;
+    padding: 25px;
+    text-align: left;
+    background: #191a2e;
+    color: #e0e3f5;
+    border-radius: 12px;
+    overflow-x: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.python-box p {
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    white-space: pre;
+}
+
+.purple {
+    color: #c6a0ff;
+}
+
+.green {
+    color: #a5e8a0;
+}
+
+/* ===== MAIN LAYOUT ===== */
+.container {
+    display: grid;
+    grid-template-columns: 230px minmax(0, 1fr);
+    gap: 30px;
+    padding: 45px 8%;
+    align-items: start;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    background: white;
+    padding: 22px 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    position: sticky;
+    top: 20px;
+}
+
+.sidebar h3 {
+    margin-bottom: 15px;
+    font-size: 19px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 9px 10px;
+    margin-bottom: 4px;
+    font-size: 13px;
+    color: #626980;
+    border-radius: 6px;
+    overflow-wrap: anywhere;
+    transition: 0.2s;
+}
+
+.sidebar a:hover {
+    color: #635bff;
+    background: #f0efff;
+}
+
+/* ===== LESSON CARDS ===== */
+.lessons {
+    min-width: 0;
+}
+
+.lesson {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 27px;
+    margin-bottom: 22px;
+    scroll-margin-top: 20px;
+}
+
+.lesson:hover {
+    border-color: #d6d2ff;
+}
+
+.number {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #635bff;
+}
+
+.lesson h2 {
+    font-size: 25px;
+    line-height: 1.35;
+    margin: 8px 0 12px;
+}
+
+.lesson h3 {
+    font-size: 17px;
+    margin: 20px 0 8px;
+}
+
+.lesson p,
+.lesson li {
+    color: #626980;
+    font-size: 14px;
+}
+
+.lesson ul {
+    padding-left: 22px;
+    margin: 12px 0;
+}
+
+.lesson li {
+    margin-bottom: 7px;
+}
+
+.lesson strong {
+    color: #25283b;
+}
+
+/* ===== CODE EXAMPLES ===== */
+.lesson pre {
+    max-width: 100%;
+    margin: 15px 0;
+    padding: 18px;
+    background: #191a2e;
+    color: #e0e3f5;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: Consolas, monospace;
+    font-size: 13px;
+    line-height: 1.8;
+    tab-size: 4;
+}
+
+.lesson pre code {
+    font-family: inherit;
+    white-space: pre;
+}
+
+.lesson p code,
+.lesson li code {
+    background: #f0efff;
+    color: #635bff;
+    padding: 2px 5px;
+    border-radius: 4px;
+    overflow-wrap: anywhere;
+}
+
+/* ===== NOTE ===== */
+.note {
+    background: #f0efff;
+    border-left: 4px solid #635bff;
+    padding: 13px;
+    border-radius: 5px;
+    margin-top: 18px;
+    font-size: 13px;
+    color: #555b70;
+}
+
+.note strong {
+    color: #635bff;
+}
+
+/* ===== PRACTICE ===== */
+.practice {
+    border-color: #d6d2ff;
+}
+
+.practice .btn {
+    margin-top: 12px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    text-align: center;
+    padding: 30px 15px;
+    background: #191a2e;
+    color: #c5c8dc;
+}
+
+.footer .logo {
+    display: inline-block;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.footer p {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 900px) {
+    .navbar {
+        padding: 18px 4%;
+    }
+
+    .container {
+        grid-template-columns: 200px minmax(0, 1fr);
+        gap: 20px;
+        padding: 35px 4%;
+    }
+
+    .lesson {
+        padding: 22px;
+    }
+
+    .lesson h2 {
+        font-size: 22px;
+    }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 650px) {
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .navbar nav {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .hero {
+        padding: 45px 5%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 28px 5%;
+    }
+
+    .sidebar {
+        position: static;
+        width: 100%;
+    }
+
+    .lessons {
+        width: 100%;
+    }
+
+    .lesson {
+        padding: 20px 16px;
+    }
+
+    .lesson h2 {
+        font-size: 21px;
+    }
+
+    .lesson pre {
+        padding: 14px;
+        font-size: 12px;
+    }
+
+    .python-box {
+        padding: 18px;
+    }
+}
+
+/* ===== SMALL PHONES ===== */
+@media (max-width: 380px) {
+    .logo {
+        font-size: 21px;
+    }
+
+    .navbar nav {
+        gap: 14px;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .lesson {
+        padding: 16px 12px;
+    }
+
+    .lesson h2 {
+        font-size: 19px;
+    }
+}

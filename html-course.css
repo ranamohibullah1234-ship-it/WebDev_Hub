@@ -1,0 +1,549 @@
+
+/* =========================
+   GENERAL SETTINGS
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    background: #f4f7fc;
+    color: #172b4d;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+pre {
+    white-space: pre;
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+code {
+    font-family: Consolas, 'Courier New', monospace;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    background: #0b1f3a;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 800;
+    color: white;
+    white-space: nowrap;
+}
+
+.logo span,
+.footer span {
+    color: #60a5fa;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.navbar nav a {
+    color: #e2e8f0;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #60a5fa;
+}
+
+.navbar nav .login {
+    border: 1px solid #94a3b8;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+    background: linear-gradient(120deg, #dbeafe, #eff6ff, #e0e7ff);
+    padding: 65px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.badge,
+.small-label {
+    display: inline-block;
+    color: #1d4ed8;
+    background: #dbeafe;
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 4vw, 52px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+    overflow-wrap: break-word;
+}
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+.hero-content > p {
+    max-width: 590px;
+    color: #52627a;
+    margin-bottom: 22px;
+    font-size: 16px;
+}
+
+.hero-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 22px;
+    margin-bottom: 25px;
+    color: #334b6c;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.primary-btn {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 9px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.primary-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.hero-card {
+    flex: 0 1 340px;
+    min-width: 0;
+    background: white;
+    border-radius: 22px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 15px 40px #1e40af15;
+}
+
+.html-icon {
+    font-family: Consolas, monospace;
+    color: #f05235;
+    font-size: 85px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.hero-card h2 {
+    font-size: 23px;
+    margin: 10px 0 5px;
+}
+
+.hero-card > p {
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.mini-code {
+    background: #111c2e;
+    color: #7dd3fc;
+    text-align: left;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: Consolas, monospace;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* =========================
+   MAIN COURSE LAYOUT
+========================= */
+.course-layout {
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns: 245px minmax(0, 1fr);
+    align-items: start;
+    gap: 28px;
+}
+
+.sidebar {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 22px 15px;
+    position: sticky;
+    top: 20px;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+}
+
+.sidebar h3 {
+    font-size: 19px;
+    margin: 0 0 15px 5px;
+}
+
+.sidebar a {
+    display: block;
+    color: #52627a;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 7px;
+    margin-bottom: 4px;
+    transition: 0.25s;
+}
+
+.sidebar a:hover {
+    background: #eff6ff;
+    color: #2563eb;
+    padding-left: 14px;
+}
+
+.lessons {
+    min-width: 0;
+}
+
+.section-title {
+    margin-bottom: 25px;
+}
+
+.section-title h2 {
+    font-size: clamp(23px, 3vw, 31px);
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.section-title > p {
+    color: #64748b;
+    font-size: 15px;
+}
+
+/* =========================
+   LESSON CARDS
+========================= */
+.lesson {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 25px;
+    margin-bottom: 22px;
+    min-width: 0;
+    box-shadow: 0 4px 15px #0f172a06;
+    scroll-margin-top: 20px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.lesson:hover {
+    border-color: #bfdbfe;
+    box-shadow: 0 8px 25px #2563eb0d;
+}
+
+.lesson-number {
+    display: inline-block;
+    color: #2563eb;
+    background: #eff6ff;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.lesson h2 {
+    font-size: 23px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    overflow-wrap: anywhere;
+}
+
+.definition {
+    color: #52627a;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.definition strong {
+    color: #172b4d;
+}
+
+.lesson h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   CODE EXAMPLES
+========================= */
+.lesson pre {
+    background: #111c2e;
+    color: #dbeafe;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+    border: 1px solid #27364d;
+}
+
+.lesson code {
+    display: block;
+    min-width: max-content;
+}
+
+.tip {
+    background: #eff6ff;
+    border-left: 4px solid #3b82f6;
+    color: #365477;
+    padding: 13px 15px;
+    border-radius: 7px;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.explanation {
+    color: #64748b;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* =========================
+   PRACTICE SECTION
+========================= */
+.practice {
+    background: linear-gradient(120deg, #dbeafe, #eff6ff);
+    border: 1px solid #bfdbfe;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.practice h2 {
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.practice p {
+    color: #52627a;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+    background: #0b1f3a;
+    color: #cbd5e1;
+    padding: 35px 20px;
+    text-align: center;
+    margin-top: 55px;
+}
+
+.footer h2 {
+    color: white;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+.copyright {
+    border-top: 1px solid #334155;
+    margin-top: 22px;
+    padding-top: 18px;
+    color: #94a3b8;
+}
+
+/* =========================
+   TABLET RESPONSIVE
+========================= */
+@media (max-width: 1000px) {
+    .navbar {
+        padding: 18px 4%;
+    }
+
+    .navbar nav {
+        gap: 13px;
+    }
+
+    .hero {
+        padding: 45px 5%;
+        gap: 25px;
+    }
+
+    .hero-card {
+        flex-basis: 280px;
+    }
+
+    .course-layout {
+        grid-template-columns: 205px minmax(0, 1fr);
+        gap: 18px;
+        padding: 0 18px;
+    }
+
+    .lesson {
+        padding: 20px;
+    }
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px 15px;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .navbar nav {
+        width: 100%;
+        gap: 12px;
+    }
+
+    .navbar nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-info {
+        justify-content: center;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 380px;
+        flex: auto;
+    }
+
+    .course-layout {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 15px;
+        margin: 25px auto;
+    }
+
+    .sidebar {
+        position: static;
+        width: 100%;
+        max-height: none;
+        overflow: visible;
+    }
+
+    .lessons {
+        width: 100%;
+    }
+
+    .section-title h2 {
+        font-size: 25px;
+    }
+
+    .lesson {
+        padding: 18px;
+        margin-bottom: 18px;
+    }
+
+    .lesson h2 {
+        font-size: 21px;
+    }
+
+    .lesson pre {
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    .practice {
+        padding: 22px;
+    }
+
+    .practice h2 {
+        font-size: 23px;
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 380px) {
+    .navbar nav {
+        gap: 10px;
+    }
+
+    .navbar nav a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero-info {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .lesson {
+        padding: 14px;
+    }
+
+    .lesson pre {
+        font-size: 11px;
+    }
+}

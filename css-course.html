@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Course | WebDev Hub</title>
+    <link rel="stylesheet" href="css-course.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="#" class="logo">WebDev <span>Hub.</span></a>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#lessons">Lessons</a>
+            <a href="#practice">Practice</a>
+        </nav>
+
+        <a href="#lessons" class="nav-btn">Start Learning</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="tag">WEB DEVELOPMENT COURSE</span>
+            <h1>Learn CSS from <span>Zero to Hero.</span></h1>
+
+            <p>
+                Learn how to style websites with CSS. Understand colors,
+                layouts, animations, responsive design and much more
+                with simple examples.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#lessons" class="primary-btn">Explore Lessons →</a>
+                <a href="#practice" class="secondary-btn">Practice Now</a>
+            </div>
+
+            <div class="course-info">
+                <div>
+                    <h3>15+</h3>
+                    <p>Topics</p>
+                </div>
+                <div>
+                    <h3>Beginner</h3>
+                    <p>Level</p>
+                </div>
+                <div>
+                    <h3>100%</h3>
+                    <p>Practical</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-card">
+            <div class="card-top">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="file-name">style.css</span>
+            </div>
+
+            <div class="code-preview">
+                <p><span class="purple">body</span> {</p>
+                <p class="indent"><span class="blue">background</span>: <span class="orange">#f4f7ff</span>;</p>
+                <p class="indent"><span class="blue">font-family</span>: <span class="orange">Arial</span>;</p>
+                <p>}</p>
+                <br>
+                <p><span class="purple">h1</span> {</p>
+                <p class="indent"><span class="blue">color</span>: <span class="orange">#635bff</span>;</p>
+                <p class="indent"><span class="blue">font-size</span>: <span class="orange">40px</span>;</p>
+                <p>}</p>
+                <br>
+                <p><span class="purple">.button</span> {</p>
+                <p class="indent"><span class="blue">border-radius</span>: <span class="orange">10px</span>;</p>
+                <p class="indent"><span class="blue">padding</span>: <span class="orange">12px 24px</span>;</p>
+                <p>}</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Course Area -->
+    <main class="course-layout" id="lessons">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>CSS Course</h3>
+            <p class="sidebar-text">YOUR LEARNING PATH</p>
+
+            <a href="#intro" class="side-link">01. Introduction</a>
+            <a href="#syntax" class="side-link">02. CSS Syntax</a>
+            <a href="#methods" class="side-link">03. Adding CSS</a>
+            <a href="#selectors" class="side-link">04. Selectors</a>
+            <a href="#colors" class="side-link">05. Colors & Backgrounds</a>
+            <a href="#text" class="side-link">06. Text & Fonts</a>
+            <a href="#box" class="side-link">07. Box Model</a>
+            <a href="#dimensions" class="side-link">08. Height & Width</a>
+            <a href="#display" class="side-link">09. Display</a>
+            <a href="#position" class="side-link">10. Position</a>
+            <a href="#flexbox" class="side-link">11. Flexbox</a>
+            <a href="#grid" class="side-link">12. CSS Grid</a>
+            <a href="#borders" class="side-link">13. Borders & Shadows</a>
+            <a href="#hover" class="side-link">14. Hover & Transitions</a>
+            <a href="#responsive" class="side-link">15. Responsive CSS</a>
+            <a href="#practice" class="side-link">Practice Project</a>
+
+            <div class="sidebar-tip">
+                <h4>💡 Learning Tip</h4>
+                <p>Write every example yourself to improve your CSS skills.</p>
+            </div>
+        </aside>
+
+        <!-- Lessons -->
+        <section class="lessons">
+
+            <div class="section-heading">
+                <span class="tag">START HERE</span>
+                <h2>CSS Fundamentals</h2>
+                <p>Learn the basics before moving to advanced layouts.</p>
+            </div>
+
+            <!-- Lesson 1 -->
+            <article class="lesson-card" id="intro">
+                <span class="lesson-number">LESSON 01</span>
+                <h2>What is CSS?</h2>
+                <p>
+                    CSS stands for Cascading Style Sheets. It is used to
+                    style HTML elements and control the appearance of a website.
+                </p>
+                <h4>What can CSS do?</h4>
+                <ul>
+                    <li>Change text and background colors.</li>
+                    <li>Set fonts, sizes and spacing.</li>
+                    <li>Create layouts and responsive pages.</li>
+                    <li>Add hover effects and animations.</li>
+                </ul>
+                <div class="note">
+                    <strong>Remember:</strong> HTML creates the structure,
+                    while CSS controls how that structure looks.
+                </div>
+            </article>
+
+            <!-- Lesson 2 -->
+            <article class="lesson-card" id="syntax">
+                <span class="lesson-number">LESSON 02</span>
+                <h2>CSS Syntax</h2>
+                <p>
+                    A CSS rule contains a selector and a declaration block.
+                    Each declaration usually has a property and a value.
+                </p>
+                <div class="code-box">
+                    <div class="code-title">CSS Example</div>
+                    <pre><code>h1 {
+    color: blue;
+    font-size: 32px;
+}</code></pre>
+                </div>
+                <ul>
+                    <li><strong>h1:</strong> Selector</li>
+                    <li><strong>color:</strong> Property</li>
+                    <li><strong>blue:</strong> Value</li>
+                </ul>
+            </article>
+
+            <!-- Lesson 3 -->
+            <article class="lesson-card" id="methods">
+                <span class="lesson-number">LESSON 03</span>
+                <h2>How to Add CSS</h2>
+                <p>There are three common ways to add CSS to HTML.</p>
+
+                <h4>1. Inline CSS</h4>
+                <pre><code>&lt;h1 style="color: red;"&gt;Hello&lt;/h1&gt;</code></pre>
+
+                <h4>2. Internal CSS</h4>
+                <pre><code>&lt;style&gt;
+h1 {
+    color: blue;
+}
+&lt;/style&gt;</code></pre>
+
+                <h4>3. External CSS</h4>
+                <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+
+                <div class="note">
+                    <strong>Best practice:</strong> Use external CSS for
+                    larger projects because it keeps HTML and CSS separate.
+                </div>
+            </article>
+
+            <!-- Lesson 4 -->
+            <article class="lesson-card" id="selectors">
+                <span class="lesson-number">LESSON 04</span>
+                <h2>CSS Selectors</h2>
+                <p>Selectors choose which HTML elements you want to style.</p>
+                <pre><code>/* Element selector */
+p {
+    color: gray;
+}
+
+/* Class selector */
+.card {
+    padding: 20px;
+}
+
+/* ID selector */
+#title {
+    color: purple;
+}
+
+/* Universal selector */
+* {
+    box-sizing: border-box;
+}</code></pre>
+                <div class="note">
+                    A class starts with a dot (<code>.</code>) in CSS,
+                    while an ID starts with a hash (<code>#</code>).
+                </div>
+            </article>
+
+            <!-- Lesson 5 -->
+            <article class="lesson-card" id="colors">
+                <span class="lesson-number">LESSON 05</span>
+                <h2>Colors & Backgrounds</h2>
+                <p>Use CSS colors and backgrounds to give your page style.</p>
+                <pre><code>body {
+    background-color: #f4f7ff;
+}
+
+h1 {
+    color: #635bff;
+}
+
+.card {
+    background-color: white;
+    background-image: linear-gradient(
+        to right, #635bff, #8b5cf6
+    );
+}</code></pre>
+                <p>Colors can be written as names, HEX, RGB or HSL values.</p>
+            </article>
+
+            <!-- Lesson 6 -->
+            <article class="lesson-card" id="text">
+                <span class="lesson-number">LESSON 06</span>
+                <h2>Text & Fonts</h2>
+                <p>Control text size, alignment, weight and font style.</p>
+                <pre><code>p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    text-align: left;
+}
+
+h1 {
+    text-decoration: none;
+    letter-spacing: 1px;
+}</code></pre>
+            </article>
+
+            <!-- Lesson 7 -->
+            <article class="lesson-card" id="box">
+                <span class="lesson-number">LESSON 07</span>
+                <h2>The CSS Box Model</h2>
+                <p>Every HTML element can be understood as a box.</p>
+                <ul>
+                    <li><strong>Content:</strong> The text or image inside.</li>
+                    <li><strong>Padding:</strong> Space inside the border.</li>
+                    <li><strong>Border:</strong> The edge around the element.</li>
+                    <li><strong>Margin:</strong> Space outside the border.</li>
+                </ul>
+                <pre><code>.card {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    margin: 20px;
+    box-sizing: border-box;
+}</code></pre>
+            </article>
+
+            <!-- Lesson 8 -->
+            <article class="lesson-card" id="dimensions">
+                <span class="lesson-number">LESSON 08</span>
+                <h2>Height, Width & Units</h2>
+                <p>CSS units control dimensions and spacing.</p>
+                <pre><code>.container {
+    width: 90%;
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 2rem;
+    margin: 0 auto;
+}</code></pre>
+                <p>
+                    Common units: <code>px</code>, <code>%</code>,
+                    <code>rem</code>, <code>em</code>, <code>vw</code>
+                    and <code>vh</code>.
+                </p>
+            </article>
+
+            <!-- Lesson 9 -->
+            <article class="lesson-card" id="display">
+                <span class="lesson-number">LESSON 09</span>
+                <h2>CSS Display</h2>
+                <p>The display property controls how elements are laid out.</p>
+                <pre><code>.container {
+    display: flex;
+    gap: 20px;
+}
+
+.item {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}</code></pre>
+                <p>Common values include <code>block</code>, <code>inline</code>,
+                    <code>inline-block</code>, <code>flex</code> and <code>grid</code>.</p>
+            </article>
+
+            <!-- Lesson 10 -->
+            <article class="lesson-card" id="position">
+                <span class="lesson-number">LESSON 10</span>
+                <h2>CSS Position</h2>
+                <p>Positioning helps you control where an element appears.</p>
+                <pre><code>.parent {
+    position: relative;
+}
+
+.child {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}</code></pre>
+                <p>
+                    Main values: <code>static</code>, <code>relative</code>,
+                    <code>absolute</code>, <code>fixed</code> and <code>sticky</code>.
+                </p>
+            </article>
+
+            <!-- Lesson 11 -->
+            <article class="lesson-card" id="flexbox">
+                <span class="lesson-number">LESSON 11</span>
+                <h2>CSS Flexbox</h2>
+                <p>Flexbox is useful for arranging items in a row or column.</p>
+                <pre><code>.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}</code></pre>
+                <ul>
+                    <li><code>justify-content</code> aligns items on the main axis.</li>
+                    <li><code>align-items</code> aligns items on the cross axis.</li>
+                    <li><code>flex-wrap</code> allows items to move to another line.</li>
+                </ul>
+            </article>
+
+            <!-- Lesson 12 -->
+            <article class="lesson-card" id="grid">
+                <span class="lesson-number">LESSON 12</span>
+                <h2>CSS Grid</h2>
+                <p>Grid helps create layouts with rows and columns.</p>
+                <pre><code>.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}</code></pre>
+                <p>For flexible cards, try <code>repeat(auto-fit, minmax(220px, 1fr))</code>.</p>
+            </article>
+
+            <!-- Lesson 13 -->
+            <article class="lesson-card" id="borders">
+                <span class="lesson-number">LESSON 13</span>
+                <h2>Borders, Radius & Shadows</h2>
+                <p>These properties help you make modern cards and buttons.</p>
+                <pre><code>.card {
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}</code></pre>
+            </article>
+
+            <!-- Lesson 14 -->
+            <article class="lesson-card" id="hover">
+                <span class="lesson-number">LESSON 14</span>
+                <h2>Hover Effects & Transitions</h2>
+                <p>Use hover effects to make interactive elements feel smoother.</p>
+                <pre><code>.button {
+    background: #635bff;
+    color: white;
+    transition: transform 0.3s ease,
+                background 0.3s ease;
+}
+
+.button:hover {
+    background: #4940e8;
+    transform: translateY(-3px);
+}</code></pre>
+            </article>
+
+            <!-- Lesson 15 -->
+            <article class="lesson-card" id="responsive">
+                <span class="lesson-number">LESSON 15</span>
+                <h2>Responsive CSS</h2>
+                <p>Media queries let you apply styles at different screen widths.</p>
+                <pre><code>/* Tablet and smaller screens */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}</code></pre>
+                <div class="note">
+                    Responsive websites adapt to different screens, including
+                    phones, tablets and laptops.
+                </div>
+            </article>
+
+            <!-- Practice Project -->
+            <article class="lesson-card practice-card" id="practice">
+                <span class="lesson-number">YOUR FIRST PROJECT</span>
+                <h2>Practice: Create a Profile Card</h2>
+                <p>Use your new CSS skills to style this simple HTML card.</p>
+
+                <pre><code>&lt;div class="profile-card"&gt;
+    &lt;h2&gt;Your Name&lt;/h2&gt;
+    &lt;p&gt;Front-End Developer&lt;/p&gt;
+    &lt;button&gt;Contact Me&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+
+                <h4>Your task</h4>
+                <ul>
+                    <li>Give the card a white background.</li>
+                    <li>Add padding and rounded corners.</li>
+                    <li>Center the text and button.</li>
+                    <li>Add a shadow and a hover effect.</li>
+                    <li>Make the card responsive.</li>
+                </ul>
+
+                <a href="index.html" class="primary-btn">Back to home </a>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#home" class="logo">WebDev <span>Hub.</span></a>
+        <p>Learn. Build. Grow.</p>
+        <p class="copyright">© 2026 WebDev Hub. Keep learning!</p>
+    </footer>
+
+</body>
+</html>

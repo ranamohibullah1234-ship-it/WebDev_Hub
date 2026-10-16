@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete HTML Course | WebDev Hub</title>
+    <link rel="stylesheet" href="html-course.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="mainpage.html" class="logo">WebDev <span>Hub.</span></a>
+
+        <nav>
+            <a href="mainpage.html">Home</a>
+            <a href="#lessons">HTML Lessons</a>
+            <a href="#practice">Practice</a>
+            <a href="login.html" class="login">Login</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">BEGINNER FRIENDLY</span>
+            <h1>Complete <span>HTML Course</span></h1>
+
+            <p>
+                Learn HTML tags with easy definitions, syntax and
+                practical examples. Start from the basics and build
+                your own webpages step by step.
+            </p>
+
+            <div class="hero-info">
+                <span>📘 20+ Topics</span>
+                <span>💻 Code Examples</span>
+                <span>🎯 Beginner Level</span>
+            </div>
+
+            <a href="#lessons" class="primary-btn">Start Learning →</a>
+        </div>
+
+        <div class="hero-card">
+            <div class="html-icon">&lt;/&gt;</div>
+            <h2>HTML Essentials</h2>
+            <p>The building blocks of every website.</p>
+            <div class="mini-code">
+                <span>&lt;html&gt;</span><br>
+                &nbsp;&nbsp;&lt;body&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Hello World!<br>
+                &nbsp;&nbsp;&lt;/body&gt;<br>
+                &lt;/html&gt;
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Course Layout -->
+    <main class="course-layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>Course Contents</h3>
+            <a href="#structure">1. Document Structure</a>
+            <a href="#headings">2. Heading Tags</a>
+            <a href="#paragraph">3. Paragraph Tag</a>
+            <a href="#text">4. Text Formatting</a>
+            <a href="#links">5. Links</a>
+            <a href="#images">6. Images</a>
+            <a href="#lists">7. Lists</a>
+            <a href="#breaks">8. Line Breaks</a>
+            <a href="#div">9. Div and Span</a>
+            <a href="#semantic">10. Semantic Tags</a>
+            <a href="#tables">11. Tables</a>
+            <a href="#forms">12. Forms</a>
+            <a href="#inputs">13. Input Types</a>
+            <a href="#buttons">14. Buttons</a>
+            <a href="#media">15. Audio and Video</a>
+            <a href="#attributes">16. Attributes</a>
+            <a href="#comments">17. Comments</a>
+            <a href="#entities">18. HTML Entities</a>
+            <a href="#iframe">19. Iframes</a>
+            <a href="#details">20. Details and Summary</a>
+        </aside>
+
+        <!-- Lessons -->
+        <div class="lessons" id="lessons">
+
+            <div class="section-title">
+                <span class="small-label">YOUR LEARNING JOURNEY</span>
+                <h2>HTML Tags, Definitions & Syntax</h2>
+                <p>Understand each tag with a simple explanation and code example.</p>
+            </div>
+
+            <!-- 1 -->
+            <article class="lesson" id="structure">
+                <span class="lesson-number">LESSON 01</span>
+                <h2>HTML Document Structure</h2>
+                <p class="definition">
+                    <strong>Definition:</strong> These elements create the basic
+                    structure of an HTML document. The head contains metadata,
+                    while the body contains the visible webpage content.
+                </p>
+
+                <h3>Syntax and Example</h3>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;title&gt;My Website&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+                <div class="tip">Tip: The DOCTYPE declaration tells the browser to use HTML5 standards.</div>
+            </article>
+
+            <!-- 2 -->
+            <article class="lesson" id="headings">
+                <span class="lesson-number">LESSON 02</span>
+                <h2>Heading Tags: &lt;h1&gt; to &lt;h6&gt;</h2>
+                <p class="definition">
+                    <strong>Definition:</strong> Heading tags define titles
+                    and subtitles. HTML provides six heading levels, from h1
+                    (highest level) to h6 (lowest level).
+                </p>
+
+                <h3>Syntax and Example</h3>
+                <pre><code>&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Section Heading&lt;/h2&gt;
+&lt;h3&gt;Subheading&lt;/h3&gt;
+&lt;h4&gt;Heading Four&lt;/h4&gt;
+&lt;h5&gt;Heading Five&lt;/h5&gt;
+&lt;h6&gt;Heading Six&lt;/h6&gt;</code></pre>
+            </article>
+
+            <!-- 3 -->
+            <article class="lesson" id="paragraph">
+                <span class="lesson-number">LESSON 03</span>
+                <h2>Paragraph Tag: &lt;p&gt;</h2>
+                <p class="definition">
+                    <strong>Definition:</strong> The p tag is used to display
+                    a paragraph of text. Browsers normally add space before
+                    and after a paragraph.
+                </p>
+
+                <h3>Syntax and Example</h3>
+                <pre><code>&lt;p&gt;HTML is used to structure webpages.&lt;/p&gt;
+&lt;p&gt;CSS is used to style webpages.&lt;/p&gt;</code></pre>
+            </article>
+
+            <!-- 4 -->
+            <article class="lesson" id="text">
+                <span class="lesson-number">LESSON 04</span>
+                <h2>Text Formatting Tags</h2>
+                <p class="definition">
+                    <strong>Definition:</strong> These tags emphasize text,
+                    show importance, or provide different text formatting.
+                </p>
+
+                <h3>Syntax and Example</h3>
+                <pre><code>&lt;b&gt;Bold text&lt;/b&gt;
+&lt;strong&gt;Important text&lt;/strong&gt;
+&lt;i&gt;Italic text&lt;/i&gt;
+&lt;em&gt;Emphasized text&lt;/em&gt;
+&lt;u&gt;Underlined text&lt;/u&gt;
+&lt;mark&gt;Highlighted text&lt;/mark&gt;
+&lt;small&gt;Small text&lt;/small&gt;
+&lt;del&gt;Deleted text&lt;/del&gt;
+&lt;ins&gt;Inserted text&lt;/ins&gt;
+H&lt;sub&gt;2&lt;/sub&gt;O
+X&lt;sup&gt;2&lt;/sup&gt;</code></pre>
+            </article>
+
+            <!-- 5 -->
+            <article class="lesson" id="links">
+                <span class="lesson-number">LESSON 05</span>
+                <h2>Anchor Tag: &lt;a&gt;</h2>
+                <p class="definition">
+                    <strong>Definition:</strong> The anchor tag creates
+                    hyperlinks to other pages, websites, files or sections
+                    of the current page. The href attribute sets the destination.
+                </p>
+
+                <h3>Syntax and Example</h3>
+                <pre><code>&lt;a href="about.html"&gt;About Us&lt;/a&gt;
+
+&lt;a href="https://example.com"
+   target="_blank"
+   rel="noopener"&gt;
+    Visit Website
+&lt;/a&gt;
+
+&lt;a href="#practice"&gt;Go to Practice&lt;/a&gt;</code></pre>
+            </article>
+
+            <!-- 6 -->
+            <article class="lesson" id="images">
+                <span class="lesson-number">LESSON 06</span>
+                <h2>Image Tag: &lt;img&gt;</h2>
+                <p class="definition">
+                    <strong>Definition:</strong> The img tag displays an
+                    image. The src attribute specifies the image location
+                    and alt provides alternative text describing the image.
+                </p>
+
+                <h3>Syntax and Example</h3>
+                <pre><code>&lt;img
+    src="images/photo.jpg"
+    alt="A beautiful landscape"
+    width="300"
+&gt;</code></pre>
+
+                <div class="tip">Tip: The img element is a void element, so it does not require a closing tag.</div>
+            </article>
+
+            <!-- 7 -->
+            <article class="lesson" id="lists">
+                <span class="lesson-number">LESSON 07</span>
+                <h2>List Tags: &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</h2>
+                <p class="definition">
+                    <strong>Definition:</strong> ul creates an unordered
+                    (bulleted) list, ol creates an ordered (numbered) list,
+                    and li represents each list item.
+                </p>
+
+                <h3>Syntax and Example</h3>
+                <pre><code>&lt;!-- Unordered list --&gt;
+&lt;ul&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Ordered list --&gt;
+&lt;ol&gt;
+    &lt;li&gt;Learn HTML&lt;/li&gt;
+    &lt;li&gt;Learn CSS&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;!-- Description list --&gt;
+&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;Structures web content.&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+            </article>
+
+            <!-- 8 -->
+            <article class="lesson" id="breaks">
+                <span class="lesson-number">LESSON 08</span>
+                <h2>Line Break and Horizontal Rule</h2>
+                <p class="definition">
+                    <strong>Definition:</strong> br starts a new line.
+                    hr represents a thematic break, often displayed as a
+                    horizontal line.
+                </p>
+
+                <h3>Syntax and Example</h3>
+                <pre><code>&lt;p&gt;Hello&lt;br&gt;Welcome to HTML.&lt;/p&gt;
+
+&lt;hr&gt;</code></pre>
+            </article>
+
+            <!-- 9 -->
+            <article class="lesson" id="div">
+                <span class="lesson-number">LESSON 09</span>
+                <h2>Division and Span Tags</h2>
+                <p class="definition">
+                    <strong>Definition:</strong> div groups block-level
+                    content, while span groups a small part of text inline.
+                    Both are commonly used with CSS.
+                </p>
+
+                <h3>Syntax and Example</h3>
+                <pre><code>&lt;div class="card"&gt;
+    &lt;h2&gt;HTML Course&lt;/h2&gt;
+    &lt;p&gt;Learn &lt;span class="highlight"&gt;HTML&lt;/span&gt; today.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+            </article>
+
+            <!-- 10 -->
+            <article class="lesson" id="semantic">
+                <span class="lesson-number">LESSON 10</span>
+                <h2>Semantic HTML Tags</h2>
+                <p class="definition">
+                    <strong>Definition:</strong> Semantic elements describe
+                    the purpose of the content they contain, helping make
+                    webpage structure clearer and more accessible.
+                </p>
+
+                <h3>Syntax and Example</h3>
+                <pre><code>&lt;header&gt;Website Header&lt;/header&gt;
+
+&lt;nav&gt;
+    &lt;a href="mainpage.html"&gt;Home&lt;/a&gt;
+&lt;/nav&gt;
+
+&lt;main&gt;
+    &lt;section&gt;
+        &lt;h2&gt;About Us&lt;/h2&gt;
+        &lt;p&gt;Our main content.&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;article&gt;An independent article&lt;/article&gt;
+    &lt;aside&gt;Related information&lt;/aside&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;Copyright Information&lt;/footer&gt;</code></pre>
+            </article>
+
+            <!-- 11 -->
+            <article class="lesson" id="tables">
+                <span class="lesson-number">LESSON 11</span>
+                <h2>Table Tags</h2>
+                <p class="definition">
+                    <strong>Definition:</strong> Tables display related
+                    information in rows and columns. tr creates a row,
+                    th creates a header cell and td creates a data cell.
+                </p>
+
+                <h3>Syntax and Example</h3>
+                <pre><code>&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Course&lt;/th&gt;
+            &lt;th&gt;Duration&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;HTML&lt;/td&gt;
+            &lt;td&gt;2 Weeks&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+            </article>
+
+            <!-- 12 -->
+            <article class="lesson" id="forms">
+                <span class="lesson-number">LESSON 12</span>
+                <h2>Form Tags</h2>
+                <p class="definition">
+                    <strong>Definition:</strong> A form collects information
+                    from users. label describes an input, while textarea
+                    allows users to enter longer text.
+                </p>
+
+                <h3>Syntax and Example</h3>
+                <pre><code>&lt;form action="/submit" method="post"&gt;
+    &lt;label for="username"&gt;Username:&lt;/label&gt;
+    &lt;input
+        type="text"
+        id="username"
+        name="username"
+        required
+    &gt;
+
+    &lt;label for="message"&gt;Message:&lt;/label&gt;
+    &lt;textarea id="message" name="message"&gt;&lt;/textarea&gt;
+
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+                <div class="tip">Note: A form needs a suitable server endpoint or other submission handling to process
+                    its data.</div>
+            </article>
+
+            <!-- 13 -->
+            <article class="lesson" id="inputs">
+                <span class="lesson-number">LESSON 13</span>
+                <h2>Input Types</h2>
+                <p class="definition">
+                    <strong>Definition:</strong> input creates interactive
+                    form controls. Its type attribute determines what kind
+                    of data a user can enter or select.
+                </p>
+
+                <h3>Syntax and Example</h3>
+                <pre><code>&lt;input type="text" placeholder="Your name"&gt;
+&lt;input type="email" placeholder="Your email"&gt;
+&lt;input type="password" placeholder="Password"&gt;
+&lt;input type="number"&gt;
+&lt;input type="date"&gt;
+&lt;input type="checkbox"&gt;
+&lt;input type="radio" name="level"&gt;
+&lt;input type="file"&gt;
+&lt;input type="color"&gt;
+&lt;input type="range"&gt;</code></pre>
+            </article>
+
+            <!-- 14 -->
+            <article class="lesson" id="buttons">
+                <span class="lesson-number">LESSON 14</span>
+                <h2>Button Tag</h2>
+                <p class="definition">
+                    <strong>Definition:</strong> The button element creates
+                    a clickable button. Its type can be button, submit
+                    or reset.
+                </p>
+
+                <h3>Syntax and Example</h3>
+                <pre><code>&lt;button type="button"&gt;Click Me&lt;/button&gt;
+
+&lt;button type="submit"&gt;Submit Form&lt;/button&gt;
+
+&lt;button type="reset"&gt;Reset Form&lt;/button&gt;</code></pre>
+            </article>
+
+            <!-- 15 -->
+            <article class="lesson" id="media">
+                <span class="lesson-number">LESSON 15</span>
+                <h2>Audio and Video Tags</h2>
+                <p class="definition">
+                    <strong>Definition:</strong> audio embeds sound,
+                    while video embeds a video player. The controls
+                    attribute displays playback controls.
+                </p>
+
+                <h3>Syntax and Example</h3>
+                <pre><code>&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+    Your browser does not support audio.
+&lt;/audio&gt;
+
+&lt;video controls width="400"&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    Your browser does not support video.
+&lt;/video&gt;</code></pre>
+            </article>
+
+            <!-- 16 -->
+            <article class="lesson" id="attributes">
+                <span class="lesson-number">LESSON 16</span>
+                <h2>HTML Attributes</h2>
+                <p class="definition">
+                    <strong>Definition:</strong> Attributes provide
+                    additional information about elements. They are
+                    usually written inside the opening tag.
+                </p>
+
+                <h3>Syntax and Example</h3>
+                <pre><code>&lt;p id="intro" class="highlight"&gt;
+    Welcome to my website.
+&lt;/p&gt;
+
+&lt;img src="photo.jpg" alt="Sample photo"&gt;
+
+&lt;input type="text" placeholder="Enter your name"&gt;</code></pre>
+                <p class="explanation">
+                    Common attributes: id, class, href, src, alt,
+                    title, name, type, value and placeholder.
+                </p>
+            </article>
+
+            <!-- 17 -->
+            <article class="lesson" id="comments">
+                <span class="lesson-number">LESSON 17</span>
+                <h2>HTML Comments</h2>
+                <p class="definition">
+                    <strong>Definition:</strong> Comments are notes for
+                    developers. The browser does not display comment
+                    text as webpage content.
+                </p>
+
+                <h3>Syntax and Example</h3>
+                <pre><code>&lt;!-- This is an HTML comment --&gt;
+
+&lt;h1&gt;Welcome to HTML&lt;/h1&gt;</code></pre>
+            </article>
+
+            <!-- 18 -->
+            <article class="lesson" id="entities">
+                <span class="lesson-number">LESSON 18</span>
+                <h2>HTML Entities</h2>
+                <p class="definition">
+                    <strong>Definition:</strong> Character references
+                    let you display reserved characters or symbols
+                    that have special meaning in HTML.
+                </p>
+
+                <h3>Syntax and Example</h3>
+                <pre><code>&amp;lt;       displays &lt;
+&amp;gt;       displays &gt;
+&amp;amp;      displays &amp;
+&amp;nbsp;     adds a non-breaking space
+&amp;copy;     displays ©
+&amp;hearts;   displays ♥</code></pre>
+            </article>
+
+            <!-- 19 -->
+            <article class="lesson" id="iframe">
+                <span class="lesson-number">LESSON 19</span>
+                <h2>Iframe Tag</h2>
+                <p class="definition">
+                    <strong>Definition:</strong> An iframe embeds another
+                    webpage or supported resource inside the current page.
+                    Some websites block iframe embedding.
+                </p>
+
+                <h3>Syntax and Example</h3>
+                <pre><code>&lt;iframe
+    src="https://example.com"
+    title="Example website"
+    width="400"
+    height="250"
+&gt;&lt;/iframe&gt;</code></pre>
+            </article>
+
+            <!-- 20 -->
+            <article class="lesson" id="details">
+                <span class="lesson-number">LESSON 20</span>
+                <h2>Details and Summary Tags</h2>
+                <p class="definition">
+                    <strong>Definition:</strong> details creates a
+                    disclosure widget. summary provides the visible
+                    heading that users click to expand or collapse it.
+                </p>
+
+                <h3>Syntax and Example</h3>
+                <pre><code>&lt;details&gt;
+    &lt;summary&gt;What is HTML?&lt;/summary&gt;
+    &lt;p&gt;HTML structures webpage content.&lt;/p&gt;
+&lt;/details&gt;</code></pre>
+            </article>
+
+            <!-- Practice -->
+            <section class="practice" id="practice">
+                <span class="small-label">YOUR TURN</span>
+                <h2>Practice HTML Today!</h2>
+                <p>
+                    Create a webpage with a heading, paragraph, image,
+                    link and list. Use the examples above to help you.
+                </p>
+                <a href="index.html" class="primary-btn">Back to Home →</a>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h2>WebDev <span>Hub.</span></h2>
+        <p>Learn HTML. Build Your Skills. Create Your Future.</p>
+        <p class="copyright">© 2026 WebDev Hub. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
