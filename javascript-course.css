@@ -1,0 +1,481 @@
+
+/* =========================
+   BASIC SETTINGS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f3e9;
+    color: #41444d;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3 {
+    line-height: 1.4;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    height: 70px;
+    padding: 0 5%;
+    background: #ffffff;
+    border-bottom: 1px solid #e6e3d8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: 800;
+    color: #343743;
+    white-space: nowrap;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.top-nav a {
+    font-size: 14px;
+    color: #666b76;
+    transition: color 0.2s;
+}
+
+.top-nav a:hover {
+    color: #356fd5;
+}
+
+/* =========================
+   MAIN COURSE LAYOUT
+========================= */
+
+.course-layout {
+    display: grid;
+    grid-template-columns: 270px minmax(0, 1fr);
+    gap: 30px;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 25px 5%;
+    align-items: start;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+    background: #fffef9;
+    border: 1px solid #e9e5d9;
+    border-radius: 14px;
+    padding: 24px 18px;
+
+    position: sticky;
+    top: 90px;
+
+    height: calc(100vh - 110px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #d8d5c9 transparent;
+}
+
+.sidebar h2 {
+    font-size: 21px;
+    color: #424650;
+    margin-bottom: 8px;
+}
+
+.sidebar-label {
+    font-size: 10px;
+    font-weight: 800;
+    color: #7a8496;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+.lesson-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.lesson-nav a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 9px 8px;
+    border-radius: 6px;
+
+    font-size: 13px;
+    color: #626977;
+
+    transition: 0.2s;
+}
+
+.lesson-nav a span {
+    color: #7b8494;
+    min-width: 28px;
+}
+
+.lesson-nav a:hover {
+    background: #edf2ff;
+    color: #356fd5;
+}
+
+.lesson-nav a:focus-visible {
+    outline: 2px solid #356fd5;
+    outline-offset: 2px;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.content {
+    min-width: 0;
+    width: 100%;
+}
+
+.page-intro {
+    text-align: center;
+    color: #727987;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+/* =========================
+   LESSON CARDS
+========================= */
+
+.lesson {
+    background: #fffef9;
+    border: 1px solid #e9e5d9;
+    border-radius: 14px;
+
+    padding: 28px;
+    margin-bottom: 24px;
+
+    min-width: 0;
+}
+
+.lesson-number {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 800;
+    color: #3874d8;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.lesson h1 {
+    font-size: 27px;
+    color: #363a44;
+    margin-bottom: 12px;
+}
+
+.lesson h2 {
+    font-size: 24px;
+    color: #363a44;
+    margin-bottom: 12px;
+}
+
+.lesson h3 {
+    font-size: 15px;
+    color: #424651;
+    margin-top: 23px;
+    margin-bottom: 10px;
+}
+
+.lesson p {
+    font-size: 13px;
+    color: #626977;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.lesson ul {
+    padding-left: 21px;
+    margin: 10px 0 20px;
+}
+
+.lesson li {
+    font-size: 13px;
+    color: #626977;
+    padding-left: 2px;
+    margin-bottom: 6px;
+}
+
+.lesson strong {
+    color: #464b57;
+}
+
+/* =========================
+   CODE EXAMPLES
+========================= */
+
+.lesson pre {
+    width: 100%;
+    overflow-x: auto;
+
+    background: #f1f2f6;
+    border: 1px solid #e0e3eb;
+    border-radius: 8px;
+
+    padding: 18px;
+    margin: 17px 0;
+
+    color: #353b49;
+    font-size: 12px;
+    line-height: 1.9;
+    tab-size: 4;
+}
+
+.lesson code {
+    font-family: Consolas, Monaco, monospace;
+}
+
+.lesson li code {
+    color: #356fd5;
+    font-size: 12px;
+}
+
+.lesson pre code {
+    overflow-wrap: normal;
+}
+
+/* =========================
+   BLUE REMINDER BOX
+========================= */
+
+.note {
+    background: #f0f5ff;
+    border-left: 4px solid #4381e4;
+
+    padding: 13px 15px;
+    margin: 22px 0 5px;
+
+    color: #63728c;
+    font-size: 12px;
+    line-height: 1.9;
+    border-radius: 0 5px 5px 0;
+}
+
+.note strong {
+    color: #3568b7;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    text-align: center;
+    padding: 30px 15px;
+    color: #737987;
+    font-size: 12px;
+}
+
+.footer h2 {
+    font-size: 22px;
+    color: #414650;
+    margin-bottom: 8px;
+}
+
+.footer h2 span {
+    color: #3976d8;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* =========================
+   TABLET RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+    .course-layout {
+        grid-template-columns: 230px minmax(0, 1fr);
+        gap: 20px;
+        padding: 22px 3%;
+    }
+
+    .sidebar {
+        padding: 20px 12px;
+    }
+
+    .sidebar h2 {
+        font-size: 18px;
+    }
+
+    .lesson {
+        padding: 23px;
+    }
+
+    .lesson h1 {
+        font-size: 25px;
+    }
+
+    .lesson h2 {
+        font-size: 22px;
+    }
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+    .header {
+        height: auto;
+        min-height: 65px;
+        padding: 14px 5%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .top-nav {
+        width: 100%;
+        justify-content: space-between;
+        gap: 12px;
+        padding-top: 10px;
+        border-top: 1px solid #eeece4;
+    }
+
+    .top-nav a {
+        font-size: 12px;
+    }
+
+    .course-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        padding: 20px 4%;
+    }
+
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        overflow: visible;
+        padding: 20px;
+    }
+
+    .sidebar h2 {
+        font-size: 20px;
+    }
+
+    .lesson-nav {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 5px;
+    }
+
+    .lesson-nav a {
+        font-size: 11px;
+        padding: 9px 6px;
+        align-items: flex-start;
+        background: #faf9f4;
+    }
+
+    .lesson-nav a span {
+        min-width: 25px;
+    }
+
+    .page-intro {
+        text-align: left;
+        margin-bottom: 17px;
+    }
+
+    .lesson {
+        padding: 21px;
+        margin-bottom: 18px;
+    }
+
+    .lesson h1 {
+        font-size: 24px;
+    }
+
+    .lesson h2 {
+        font-size: 22px;
+    }
+
+    .lesson h3 {
+        font-size: 14px;
+    }
+
+    .lesson p,
+    .lesson li {
+        font-size: 12px;
+    }
+
+    .lesson pre {
+        padding: 14px;
+        font-size: 11px;
+    }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 380px) {
+    .course-layout {
+        padding: 15px 3%;
+    }
+
+    .lesson {
+        padding: 16px;
+    }
+
+    .lesson-nav {
+        grid-template-columns: 1fr;
+    }
+
+    .lesson h1 {
+        font-size: 22px;
+    }
+
+    .lesson h2 {
+        font-size: 20px;
+    }
+
+    .lesson pre {
+        padding: 10px;
+        font-size: 10px;
+    }
+}
